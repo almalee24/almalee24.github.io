@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "GitHub Jobs Api Project"
-date:       2020-09-11 13:43:12 +0000
+date:       2020-09-11 09:43:13 -0400
 permalink:  github_jobs_api_project
 ---
 
