@@ -1,0 +1,9 @@
+---
+layout: post
+title:      "Goalgram- Sinatra Project"
+date:       2020-10-11 21:07:32 +0000
+permalink:  goalgram-_sinatra_project
+---
+
+
+This was one of those times where you’re working on a project and you have no idea what you are doing then everything slowly starts making sense. This was a very fun project to work on because it was one were we could see our progress on a webpage. I decided to make a Instagram clone because I thought it would be a good challenge for me. One big challenged I face was that my User.all wasn’t populating with the seed data I had created and it would only return the current_user. With the help of my Cohort lead we figured out was that I had us a ActiveRecord class method called  has_secure_password on the User Class. This requires that when Users are created they need to have a password or it will give an error causing the User.all not to be able populate. This was an easy fix, I just needed to add to User seed a password using the Faker gem. Also my project wouldn’t be an Instagram clone without images. That was my next big challenge. The Faker gem didn’t have a seed library for images so I had to create two arrays of image url strings, one for profile pictures and another one for post images. I then inputed the data by using the .sample method which returns a random element in the arrays. My used Active Record Associations between my user and post model. The post model_belongs to users and the user has_many post. I had views I had a users, post and sessions folders. The users folder allowed the current users to edit their profile, view their posts and allow new users to sign up. The post folder allowed user to view all the posts be other users, make a new post or edit their current posts. The sessions folder had a login file that allowed users to log in into Goalgram. 
