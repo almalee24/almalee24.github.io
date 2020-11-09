@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Magic Job Portabl - Rails Project"
-date:       2020-11-09 10:53:30 +0000
+date:       2020-11-09 05:53:31 -0500
 permalink:  magic_job_portabl_-_rails_project
 ---
 
