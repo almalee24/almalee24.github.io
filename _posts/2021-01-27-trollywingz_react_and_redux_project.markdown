@@ -57,5 +57,32 @@ render(){
 
 In the return method I delcared routes and used switch to ensure that routes were render exclusively. Then I passed props to the componentes render by the routes. For the index route that shows  all companies I called the companies component.  In there I iterated through companies using map and render indivual divs that included company name, logo, background image and features. You could click on the company and it would take you to the store front. By doing this we are now in the Company Show component iterating through all the individual company information and goods. 
 
+```
+ return (
+        <div className='company-container'>
+                {company.companies.map(company =>
+                <div className="store-card" key={company.id}>
+                    <Link to={`/stores/${company.name.toLowerCase().split(' ').join('-')}/storefront`}>
+                        <div className="store-background" style={{backgroundImage: `url(${company.image_background})`}}>
+                            <div className="store-logo">
+                                <img src={company.image_logo}></img>
+                            </div>
+                        </div>
+                        <div className="store-info">
+                            <div className="store-name">
+                                {company.name}
+                            </div>
+                            <div className="store-features">
+                                Delivery
+                            </div>
+                        </div>
+                    </Link>
+                </div>)}
+           
+        </div>
+    )
+```
 
-I also created user signin. login and a shopping cart. This required both backend tables and controllers but also required more fetches and stateless components. This was very challenging project but one that has helped my grown so much in my skill. There's still so much work to be done and I'm excited to continue developing this app further. 
+I also created user signin. login and a shopping cart. This required both backend tables and controllers but also required more fetches and stateless components. This was very challenging project but one that has helped my grown so much in my skill. There's still so much work to be done and I'm excited to continue developing this app further. # Enter your title here
+
+The content of your blog post goes here.
