@@ -63,7 +63,7 @@ In the return method I delcared routes and used switch to ensure that routes wer
                 {company.companies.map(company =>
                 <div className="store-card" key={company.id}>
                     <Link to={`/stores/${company.name.toLowerCase().split(' ').join('-')}/storefront`}>
-                        <div className="store-background" style={{backgroundImage: `url({{company.image_background}})`}}>
+                        <div className="store-background" style={backgroundImage: `url(${company.image_background})`}>
                             <div className="store-logo">
                                 <img src={company.image_logo}></img>
                             </div>
