@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "TrollyWingz: React & Redux Project"
-date:       2021-01-27 12:43:38 +0000
+date:       2021-01-27 07:43:39 -0500
 permalink:  trollywingz_react_and_redux_project
 ---
 
